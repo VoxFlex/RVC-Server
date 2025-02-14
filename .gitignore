@@ -1,0 +1,69 @@
+# 🔹 Ignore all other .pth files
+*.pth
+
+# 🔹 Ignore Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.whl
+*.so
+
+# 🔹 Ignore virtual environment
+venv/
+env/
+
+# 🔹 Ignore test files
+test/
+
+# 🔹 Ignore base models & AI model files
+base_model/
+rvc_python/base_model/
+pretrained_models/
+pretrained_models/2stems/
+
+# 🔹 Ignore all voice models except NontTanont.pth
+voice_models/*
+
+# 🔹 Ignore other model-related files
+*.index
+*.meta
+
+# 🔹 Ignore output folders
+output/
+output_folder/
+output_voice_folder/
+out/
+dist/
+
+# 🔹 Ignore audio files
+*.mp3
+*.wav
+2.mp3
+
+# 🔹 Ignore models directory
+/models/
+rvc_models/
+
+# 🔹 Ignore system files (Mac, Windows)
+.DS_Store
+Thumbs.db
+
+# 🔹 Ignore logs and temporary files
+*.log
+logs/
+debug.log
+
+# 🔹 Ignore FastAPI upload files (if needed)
+input/
+uploads/
+
+# 🔹 Ignore IDE settings
+.vscode/
+.idea/
+*.iml
+
+# 🔹 Keep NontTanont.pth (ต้องมาก่อน `*.pth`)
+!voice_models/NontTanont.pth
+!voice_models/.gitkeep
+
