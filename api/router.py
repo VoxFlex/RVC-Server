@@ -29,5 +29,5 @@ def unload_model_route():
 # ✅ **Health Check**
 @router.get("/")
 def health_check():
-    return {"status": "API is running"}
+    return {"status": "From RVC-Server API is running"}
 

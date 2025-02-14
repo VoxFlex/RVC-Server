@@ -66,4 +66,4 @@ uploads/
 # 🔹 Keep NontTanont.pth (ต้องมาก่อน `*.pth`)
 !voice_models/NontTanont.pth
 !voice_models/.gitkeep
-
+note.txt
