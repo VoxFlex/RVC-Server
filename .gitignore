@@ -67,3 +67,4 @@ uploads/
 !voice_models/NontTanont.pth
 !voice_models/.gitkeep
 note.txt
+output_video_folder
