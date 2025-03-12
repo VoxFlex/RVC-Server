@@ -176,7 +176,21 @@ class RVCInference:
         self.device = device
         self.config.device = device
         self.vc.device = device
+    
+    def get_default_settings(self):
 
+        default_settings = {
+            "f0method": self.f0method,
+            "f0up_key": self.f0up_key,
+            "index_rate": self.index_rate,
+            "filter_radius": self.filter_radius,
+            "resample_sr": self.resample_sr,
+            "rms_mix_rate": self.rms_mix_rate,
+            "protect": self.protect
+        }
+        
+        return default_settings
+    
 # Usage example:
 if __name__ == "__main__":
     rvc = RVCInference(

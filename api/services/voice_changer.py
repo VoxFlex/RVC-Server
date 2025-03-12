@@ -2,6 +2,7 @@ import os
 import shutil
 import base64
 from rvc_python.infer import RVCInference
+from fastapi import FastAPI, APIRouter, UploadFile, File, HTTPException
 
 # ตั้งค่าโฟลเดอร์เก็บไฟล์
 INPUT_DIR = "input/"
@@ -23,6 +24,7 @@ def list_models():
 
 # **เลือกโมเดลที่ต้องการใช้**
 def select_model(model_name: str):
+    print(model_name,"EIEIEI")
     model_path = os.path.join(MODEL_DIR, model_name)
     
     if not os.path.exists(model_path):
@@ -41,7 +43,7 @@ def current_model():
     """ปิดการใช้งานโมเดล"""
     return {"current_model": rvc.current_model}
 
-def convert_voice(file):
+def convert_voice(file: UploadFile):
     try:
         input_path = os.path.join(INPUT_DIR, file.filename)
         output_path = os.path.join(OUTPUT_DIR, f"converted_{file.filename}.wav")
