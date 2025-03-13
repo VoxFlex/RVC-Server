@@ -33,6 +33,7 @@ voice_models/*
 output/
 output_folder/
 output_voice_folder/
+output_song_folder
 out/
 dist/
 
